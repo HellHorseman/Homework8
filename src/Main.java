@@ -41,7 +41,7 @@ public class Main {
         System.out.print(year[0]);
         System.out.println();
         System.out.println("Задача 4");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < massive.length; i++) {
             if (massive[i] % 2 != 0) {
                 massive[i] = massive[i] + 1;
             }
