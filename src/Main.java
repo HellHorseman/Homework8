@@ -1,27 +1,51 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task3();
-    }
-
-    public static void task1 () {
-        System.out.println("Задача 1 и 2");
-    int massive [] = new int [3];
-    massive [0] = 1;
-    massive [1] = 2;
-    massive [2] = 3;
-        System.out.print(massive[0] + ", " + massive[1] + ", " + massive[2]);
+        System.out.println("задача 2");
+        int[] massive = new int[3];
+        massive[0] = 1;
+        massive[1] = 2;
+        massive[2] = 3;
+        for (int i = 0; i < 2; i++) {
+            System.out.print(massive[i] + ", ");
+        }
+        System.out.print(massive[2]);
         System.out.println();
-    double massive1 [] = {1.57, 7.654, 9.986};
-        System.out.print(massive1[0] + ", " + massive1[1] + ", " + massive1[2]);
+        double[] massive1 = {1.57, 7.654, 9.986};
+        for (int i = 0; i < 2; i++) {
+            System.out.print(massive1[i] + ", ");
+        }
+        System.out.print(massive1[2]);
         System.out.println();
-    int year [] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-        System.out.print(year[0] + ", " + year[1] + ", " + year[2] + ", " + year[3] + ", " + year[4] + ", " + year[5] + ", " + year[6] + ", " + year[7] + ", " + year[8] + ", " + year[9] + ", " + year[10] + ", " + year[11]);
+        int[] year = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        for (int index = 0; index < 11; index++) {
+            System.out.print(year[index] + ", ");
+        }
+        System.out.print(year[11]);
         System.out.println();
-    }
-
-    public static void task3 () {
         System.out.println("Задача 3");
-
+        for (int i = 2; i > 0; i--) {
+            System.out.print(massive[i] + ", ");
+        }
+        System.out.print(massive[0]);
+        System.out.println();
+        for (int i = 2; i > 0; i--) {
+            System.out.print(massive1[i] + ", ");
+        }
+        System.out.print(massive1[0]);
+        System.out.println();
+        for (int index = 11; index > 0; index--) {
+            System.out.print(year[index] + ", ");
+        }
+        System.out.print(year[0]);
+        System.out.println();
+        System.out.println("Задача 4");
+        for (int i = 0; i < 3; i++) {
+            if (massive[i] % 2 != 0) {
+                massive[i] = massive[i] + 1;
+            }
+        }
+        System.out.println(Arrays.toString(massive));
     }
 }
